@@ -1,10 +1,10 @@
-import Button from "@/components/button";
+import TodoList from "@/modules/todoList";
 import React from "react";
 
 const HomePage = () => {
   return (
     <div>
-      <Button />
+      <TodoList />
     </div>
   );
 };
