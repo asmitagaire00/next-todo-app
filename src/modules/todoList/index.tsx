@@ -34,8 +34,10 @@ const TodoList = () => {
 
   const saveEditedTodo = (itemId: string) => {};
 
+  console.log("fafa", process.env.DATABASE_URL);
+
   return (
-    <div>
+    <div className="mt-10">
       <TodoItem todo={todo} setTodo={setTodo} addTodoList={addTodoList} />
       <div className="mt-4">
         {todoList.map((item) => (

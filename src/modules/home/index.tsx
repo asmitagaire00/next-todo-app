@@ -3,7 +3,7 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="mt-10 border border-gray-800">
       <TodoList />
     </div>
   );
