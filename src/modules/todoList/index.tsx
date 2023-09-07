@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import TodoItem from "@/modules/todoItem";
 import Button from "@/components/button";
-import { createUser } from "@/pages/api/todo";
+// import { createUser } from "@/pages/api/todo";
 
 interface Items {
   id: string;
@@ -61,22 +61,22 @@ const TodoList = () => {
 
   const saveEditedTodo = (itemId: string) => {};
 
-  const handleCreateUser = async () => {
-    try {
-      const user = await createUser();
-      if (user) {
-        console.log(user);
-      } else {
-        console.log("user already exixt");
-      }
-    } catch (error) {
-      console.log("no user", error);
-    }
-  };
+  // const handleCreateUser = async () => {
+  //   try {
+  //     const user = await createUser();
+  //     if (user) {
+  //       console.log(user);
+  //     } else {
+  //       console.log("user already exixt");
+  //     }
+  //   } catch (error) {
+  //     console.log("no user", error);
+  //   }
+  // };
 
   return (
     <div className="flex flex-col ">
-      <Button onClick={handleCreateUser} buttonName="Create user" />
+      {/* <Button onClick={handleCreateUser} buttonName="Create user" /> */}
       <TodoItem todo={todo} setTodo={setTodo} addTodoList={addTodoList} />
       <div className="mt-10">
         {todoList.map((item) => (
