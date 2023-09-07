@@ -3,9 +3,10 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import prisma from "../../../../lib/prisma";
 
 type TodoList = {
-  id: string;
+  id: number;
   todo: string;
-  status: string;
+  status: string | null;
+  authorId: number;
 };
 
 type TodoItem = {
@@ -26,7 +27,7 @@ export default async function handler(
     const todoData = JSON.parse(req.body);
     const todo = todoData.todo,
       status = todoData.status;
-    const todos = createTodo(todo, status);
+    const todos = await createTodo(todo, status);
 
     return res.json(todos);
   }
