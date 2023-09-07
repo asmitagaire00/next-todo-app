@@ -7,8 +7,6 @@ interface SearchInput {
 }
 
 const Search = ({ todo, handleTodoChange }: SearchInput) => {
-  console.log("todo value is:", todo);
-
   return (
     <div>
       <input

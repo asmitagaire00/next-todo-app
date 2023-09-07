@@ -3,7 +3,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="flex justify-center align-middle ">
+    <div className="flex justify-center align-middle mt-10">
       <HomePage />
     </div>
   );

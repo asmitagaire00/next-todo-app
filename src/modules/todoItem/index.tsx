@@ -24,7 +24,7 @@ const TodoItem = ({ addTodoList, todo, setTodo }: TodoItemProps) => {
   };
 
   return (
-    <div className="flex justify-center align-middle mt-10 ">
+    <div className="flex justify-center align-middle ">
       <Search
         todo={todo}
         setTodo={setTodo}
